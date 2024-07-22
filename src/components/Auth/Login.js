@@ -43,7 +43,7 @@ const Login = () => {
             />
           </Box>
           <Box>
-            <Link to={"/forgotpassword"}>
+            <Link to={"/forgetpassword"}>
                 <Button fontSize={'sm'} variant={'link'}>Forgetten Your Password?</Button>
             </Link>
           </Box>

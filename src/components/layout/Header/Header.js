@@ -48,7 +48,7 @@ const Header = () => {
             <DrawerHeader borderBottom={'1px'}>KnowledgeNest</DrawerHeader>
             <DrawerBody>
               <VStack spacing={'6'} alignItems={'flex-start'}>
-                <LinkButton onClose={onClose} url="/" title="HOME" />
+                <LinkButton onClose={onClose} url="/" title="Home" />
                 <LinkButton onClose={onClose} url="/courses" title="All Courses" />
                 <LinkButton onClose={onClose} url="/request" title="Request a Course" />
                 <LinkButton onClose={onClose} url="/contact" title="Contact Us" />
