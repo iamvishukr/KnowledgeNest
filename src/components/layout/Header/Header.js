@@ -17,7 +17,7 @@ const Header = () => {
   const user = {
     role: 'admin',
   }  
-  const isAuthenticated = false;
+  const isAuthenticated = true;
   const logoutHandler = () => {
     console.log('logged out');
     onClose();
@@ -39,6 +39,7 @@ const Header = () => {
         top="6"
         left="6"
         rounded="full"
+        zIndex={'overlay'}
       >
         <RiMenu5Fill />
       </Button>

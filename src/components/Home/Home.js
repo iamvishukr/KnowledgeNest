@@ -15,12 +15,9 @@ import { FaLinkedin } from 'react-icons/fa';
 import React from 'react';
 import vg from '../../assets/images/vg.png';
 import { Link } from 'react-router-dom';
-import To from '../../assets/videos/To.mp4';
+import Intro from '../Intro/Intro';
 
 const Home = () => {
-  const autoPlay = window.onload = function() {
-        document.getElementById('vid').play()
-        }
   return (
     <section className="Home">
       <div className="h-[100vh] p-[5rem] box-border">
@@ -31,9 +28,20 @@ const Home = () => {
           align="center"
           spacing={['16', '56']}
         >
-          <VStack width={'full'} alignItems={['center', 'flex-end']} spacing={'8'}>
-            <Heading textAlign={['center', 'left']} children="LEARN FROM THE EXPERTS" size={'2xl'} />
-            <Text textAlign={['center', 'left']} children="Best Resources for Human and Aliens" />
+          <VStack
+            width={'full'}
+            alignItems={['center', 'flex-end']}
+            spacing={'8'}
+          >
+            <Heading
+              textAlign={['center', 'left']}
+              children="LEARN FROM THE EXPERTS"
+              size={'2xl'}
+            />
+            <Text
+              textAlign={['center', 'left']}
+              children="Best Resources for Human and Aliens"
+            />
             <Link to="/courses">
               <Button size={'lg'} colorScheme="yellow">
                 Explore Now
@@ -50,7 +58,7 @@ const Home = () => {
         </Stack>
       </div>
 
-      <Box padding={'6'} bg="blackAlpha.800" >
+      <Box padding={'6'} bg="blackAlpha.800">
         <Heading
           textAlign={'center'}
           fontFamily="body"
@@ -65,23 +73,8 @@ const Home = () => {
         </HStack>
       </Box>
       <div className="md:h-[100vh] md:-my-16 h-auto flex justify-center items-center">
-        <video
-          onScroll={autoPlay}
-          muted
-          loop
-          typeof="video/mp4"
-          src={To}
-          id="vid"
-          className="md:w-[60%] w-[100%] outline-none bg-current"
-          autoPlay
-          controls
-          controlsList="nodownload nofullscreen noremoteplayback nomutebutton"
-          disablePictureInPicture
-          disableRemotePlayback
-        ></video>
-        <script>
-            
-        </script>
+        <Intro />
+        <script></script>
       </div>
     </section>
   );
