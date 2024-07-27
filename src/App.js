@@ -18,6 +18,8 @@ import Subscribe from './components/Payment/Subscribe';
 import NotFound from './components/NotFound/NotFound';
 import CoursePage from './components/Course/CoursePage';
 import Profile from './components/Profile/Profile';
+import ChangePassword from './components/Profile/ChangePassword';
+import UpdateProfile from './components/Profile/UpdateProfile';
 
 
 function App() {
@@ -35,6 +37,8 @@ function App() {
           <Route path='/profile' element={<Profile />} />
           <Route path='/about' element={<About />} />
           <Route path='/forgetpassword' element={<ForgetPassword />} />
+          <Route path='/changepassword' element={<ChangePassword />} />
+          <Route path='/updateprofile' element={<UpdateProfile />} />
           <Route path='/resetpassword/:token' element={<ResetPassword />} />
           <Route path='/paymentsuccess' element={<PaymentSuccess />} />
           <Route path='/paymentfail' element={<PaymentFail />} />

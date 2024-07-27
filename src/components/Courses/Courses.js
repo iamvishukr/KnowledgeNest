@@ -84,6 +84,7 @@ const Courses = () => {
             {categories.map((item, index) => (
               <Button
                 key={index}
+               // category={category}
                 onClick={() => setCategory(item)}
                 marginLeft={'0.5'}
                 marginTop={'2'}
